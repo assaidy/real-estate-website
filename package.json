@@ -1,0 +1,57 @@
+{
+  "name": "real-estate-backend",
+  "version": "1.0.0",
+  "description": "Modular monolith Node.js/Express backend for real estate marketplace",
+  "main": "src/server.js",
+  "type": "module",
+  "engines": {
+    "node": ">=25.0.0"
+  },
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "nodemon src/server.js",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "test:coverage": "jest --coverage",
+    "lint": "eslint src/",
+    "lint:fix": "eslint src/ --fix",
+    "format": "prettier --write src/",
+    "db:migrate": "migrate-mongo up",
+    "db:migrate:down": "migrate-mongo down",
+    "db:status": "migrate-mongo status",
+    "db:create": "migrate-mongo create"
+  },
+  "keywords": [
+    "real-estate",
+    "mongodb",
+    "express",
+    "api"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.21.0",
+    "express-rate-limit": "^7.4.0",
+    "helmet": "^8.0.0",
+    "joi": "^17.13.3",
+    "jsonwebtoken": "^9.0.2",
+    "migrate-mongo": "^14.0.7",
+    "mongoose": "^8.8.0",
+    "morgan": "^1.10.0",
+    "winston": "^3.15.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.29.0",
+    "@babel/preset-env": "^7.29.0",
+    "@shelf/jest-mongodb": "^4.3.0",
+    "babel-jest": "^30.2.0",
+    "eslint": "^9.12.0",
+    "jest": "^29.7.0",
+    "nodemon": "^3.1.4",
+    "prettier": "^3.3.3",
+    "supertest": "^7.0.0"
+  }
+}
