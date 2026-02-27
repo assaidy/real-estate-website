@@ -93,7 +93,6 @@ shared/
 - **Modular Monolith**: Self-contained modules with clear boundaries, enabling future microservice extraction
 - **Controller → Service → Repository**: Strict separation of concerns across layers
 - **Dependency Injection**: Loose coupling between components
-- **Domain-Driven Design**: Business logic encapsulated within service layers
 
 ### Data Management
 
@@ -282,7 +281,6 @@ shared/
 
 - **Pagination Required**: All listing endpoints must implement pagination
 - **Response Compression**: Gzip compression for API responses
-- **Caching Strategy**: Redis integration for frequently accessed data
 - **Async Processing**: Non-blocking I/O operations
 - **Load Balancing Ready**: Horizontal scaling preparation
 
@@ -299,7 +297,6 @@ shared/
 ### Code Quality
 
 - **Consistent Response Format**: Standardized API response structure
-- **Type Safety**: JSDoc annotations or TypeScript migration path
 - **Error Handling**: Comprehensive error catching and logging
 - **Code Organization**: Clear file naming and structure conventions
 - **Documentation**: Inline documentation for complex logic
